@@ -1,0 +1,20 @@
+{
+  "name": "db_tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "window.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "js-beautify": "^1.8.6"
+  },
+  "dependencies": {
+    "electron": "^3.0.3"
+  }
+}

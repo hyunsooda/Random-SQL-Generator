@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random SQL INSERT SYNTAX GENERATION</title>
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+  <style>
+    
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+
+    #dropzone {
+        border:2px dotted #3292A2;
+        width:100%;
+        height:100%;
+        display: table;
+    }
+    #drop-text {
+        font-size:24px;
+        padding-top:12px;
+        margin-top:10px;
+        color:#92AAB0;
+        text-align:center;
+        vertical-align:middle;
+        display:table-cell
+    }
+  </style>
+</head>
+<body>
+  <!-- Modal Trigger -->
+  <a style="display:none; height:100%; width:100%; " id='modalBtn' class="waves-effect waves-light btn modal-trigger" href="#modal1">Transformation</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4 id='input'>Insert sentence Generation</h4>
+      <div class="row">
+          <div class="col s12">
+            <div class="input-field col s6">
+              <input id="number" type="number" class="validate">
+              <label for="number">Input the number of iteration.</label>
+              <span class="helper-text" data-error="wrong" data-success="right"></span>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" id='generation'class="modal-close waves-effect waves-green btn-flat">Generation</a>
+    </div>
+  </div>
+
+
+
+  <nav id='header'>
+    <div class="nav-wrapper">
+      <a class="brand-logo center">Hyun-soo, Sang-bin</a>   
+    </div>
+  </nav>
+  <div id="dropzone" >
+    <p id='drop-text' onresize=''>Drag & Drop Files Here</p>
+  </div>
+
+  <script src='dist/build.js'></script>
+  
+</body>
+</html>
